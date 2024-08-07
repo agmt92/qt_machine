@@ -7,11 +7,6 @@ $text-color: #f0f0f0;
 $button-bg-color: #4a4a4a;
 $button-hover-bg-color: #383838;
 
-// Define the mixin
-@mixin changeTheme($color) {
-  background-color: $color;
-  color: white;
-}
 
 // Use the mixin
 .my-element {
