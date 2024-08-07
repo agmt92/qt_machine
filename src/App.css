@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap');
+
+/* Variables */
+:root {
+  --background-start-blue: #0f0c29;
+  --background-middle-blue: #302b63;
+  --background-end-blue: #24243e;
+
+  --background-start-green: #0f2b3d;
+  --background-middle-green: #0f4c75;
+  --background-end-green: #0b6e99;
+
+  --background-start-red: #2b0f0f;
+  --background-middle-red: #4c0f0f;
+  --background-end-red: #6e0b0b;
+
+  --card-color: #2b2b2b;
+  --text-color: #f0f0f0;
+  --button-bg-color: #4a4a4a;
+  --button-hover-bg-color: #383838;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+body.dark-blue {
+  background: linear-gradient(-45deg, var(--background-start-blue), var(--background-middle-blue), var(--background-end-blue));
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body.dark-green {
+  background: linear-gradient(-45deg, var(--background-start-green), var(--background-middle-green), var(--background-end-green));
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+body.dark-red {
+  background: linear-gradient(-45deg, var(--background-start-red), var(--background-middle-red), var(--background-end-red));
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styles for #text */
+#text {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* quote-box transparent card styles */
+#quote-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* h1 styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* h2 styles */
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/* Button styles */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+/* tweet a element styles */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--button-bg-color);
 }
