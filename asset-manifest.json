@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/qt_machine.git/static/css/main.7a8b8dbd.chunk.css",
-    "main.js": "/qt_machine.git/static/js/main.ddabe873.chunk.js",
-    "main.js.map": "/qt_machine.git/static/js/main.ddabe873.chunk.js.map",
-    "runtime~main.js": "/qt_machine.git/static/js/runtime~main.2b58fd87.js",
-    "runtime~main.js.map": "/qt_machine.git/static/js/runtime~main.2b58fd87.js.map",
-    "static/js/2.0632cb04.chunk.js": "/qt_machine.git/static/js/2.0632cb04.chunk.js",
-    "static/js/2.0632cb04.chunk.js.map": "/qt_machine.git/static/js/2.0632cb04.chunk.js.map",
-    "index.html": "/qt_machine.git/index.html",
-    "precache-manifest.0764837205f9886ceb7699e62957b6c7.js": "/qt_machine.git/precache-manifest.0764837205f9886ceb7699e62957b6c7.js",
-    "service-worker.js": "/qt_machine.git/service-worker.js",
-    "static/css/main.7a8b8dbd.chunk.css.map": "/qt_machine.git/static/css/main.7a8b8dbd.chunk.css.map"
+    "main.css": "/qt_machine/static/css/main.7a8b8dbd.chunk.css",
+    "main.js": "/qt_machine/static/js/main.ddabe873.chunk.js",
+    "main.js.map": "/qt_machine/static/js/main.ddabe873.chunk.js.map",
+    "runtime~main.js": "/qt_machine/static/js/runtime~main.57c92e91.js",
+    "runtime~main.js.map": "/qt_machine/static/js/runtime~main.57c92e91.js.map",
+    "static/js/2.0632cb04.chunk.js": "/qt_machine/static/js/2.0632cb04.chunk.js",
+    "static/js/2.0632cb04.chunk.js.map": "/qt_machine/static/js/2.0632cb04.chunk.js.map",
+    "index.html": "/qt_machine/index.html",
+    "precache-manifest.d1f3735abd0f0ff6615e97d5f5201359.js": "/qt_machine/precache-manifest.d1f3735abd0f0ff6615e97d5f5201359.js",
+    "service-worker.js": "/qt_machine/service-worker.js",
+    "static/css/main.7a8b8dbd.chunk.css.map": "/qt_machine/static/css/main.7a8b8dbd.chunk.css.map"
   }
 }
