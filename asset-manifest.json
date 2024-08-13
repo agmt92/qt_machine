@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/qt_machine/static/css/main.a96b783a.css",
-    "main.js": "/qt_machine/static/js/main.d5ccc60c.js",
-    "index.html": "/qt_machine/index.html",
-    "main.a96b783a.css.map": "/qt_machine/static/css/main.a96b783a.css.map",
-    "main.d5ccc60c.js.map": "/qt_machine/static/js/main.d5ccc60c.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.a96b783a.css",
-    "static/js/main.d5ccc60c.js"
-  ]
+    "main.css": "/qt_machine.git/static/css/main.7a8b8dbd.chunk.css",
+    "main.js": "/qt_machine.git/static/js/main.ddabe873.chunk.js",
+    "main.js.map": "/qt_machine.git/static/js/main.ddabe873.chunk.js.map",
+    "runtime~main.js": "/qt_machine.git/static/js/runtime~main.2b58fd87.js",
+    "runtime~main.js.map": "/qt_machine.git/static/js/runtime~main.2b58fd87.js.map",
+    "static/js/2.0632cb04.chunk.js": "/qt_machine.git/static/js/2.0632cb04.chunk.js",
+    "static/js/2.0632cb04.chunk.js.map": "/qt_machine.git/static/js/2.0632cb04.chunk.js.map",
+    "index.html": "/qt_machine.git/index.html",
+    "precache-manifest.0764837205f9886ceb7699e62957b6c7.js": "/qt_machine.git/precache-manifest.0764837205f9886ceb7699e62957b6c7.js",
+    "service-worker.js": "/qt_machine.git/service-worker.js",
+    "static/css/main.7a8b8dbd.chunk.css.map": "/qt_machine.git/static/css/main.7a8b8dbd.chunk.css.map"
+  }
 }
