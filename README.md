@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Quote Machine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an exam of the freeCodeCamp Front End Development Libraries curriculum. It is a Quote Machine built using React and Redux. The application fetches quotes from an external API and displays them with a random theme. Users can also tweet the displayed quote.
 
-## Available Scripts
+You can view the live demo of the project [here](https://agmt92.github.io/qt_machine/).
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- Introduction
+- Features
+- [Technologies Used](#technologies-used)
+- [Setup and Installation](#setup-and-installation)
+- Usage
+- [Project Structure](#project-structure)
+- Troubleshooting
+- Contributing
+- License
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Quote Machine is a web application that provides a simple interface for displaying random quotes. It is built using React for the user interface and Redux for state management. This project is part of the freeCodeCamp Front End Development Libraries curriculum.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Random Quotes**: Display random quotes fetched from an external API.
+- **Theme Toggle**: Change the theme of the application with each new quote.
+- **Tweet Quote**: Tweet the displayed quote directly from the application.
+- **Responsive Design**: The application is responsive and works well on different screen sizes.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: For building the user interface.
+- **Redux**: For state management.
+- **SCSS**: For styling the application.
+- **Axios**: For making HTTP requests.
+- **JavaScript**: For handling logic and interactions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup and Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To set up and run this project locally, follow these steps:
 
-### `npm run eject`
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/qt_machine.git
+    cd qt_machine
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**:
+    ```bash
+    npm start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Open the application**:
+    Open your web browser and go to [`http://localhost:3000`](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+- **Display Random Quote**: Click the "Randomize" button to display a new random quote and change the theme.
+- **Tweet Quote**: Click the "Tweet" button to tweet the displayed quote.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+qt_machine/
+│
+├── public/                 # Public assets
+│   ├── index.html          # Main HTML file
+│   └── ...
+│
+├── src/                    # Source files
+│   ├── App.js              # Main App component
+│   ├── App.scss            # SCSS styles
+│   ├── index.js            # Entry point
+│   ├── redux/              # Redux actions and reducers
+│   └── ...
+│
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
+```
 
-### Code Splitting
+## Troubleshooting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If port 3000 is already in use, you can find the process ID (PID) and kill it using the following steps:
 
-### Analyzing the Bundle Size
+1. **Find the PID**:
+    ```bash
+    lsof -i :3000
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    This command will list the processes using port 3000. Look for the PID in the output.
 
-### Making a Progressive Web App
+2. **Kill the process**:
+    ```bash
+    kill -9 <PID>
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    Replace `<PID>` with the actual process ID you found in the previous step.
 
-### Advanced Configuration
+3. **Restart the server**:
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are welcome! If you have any suggestions or improvements, please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
 
-### `npm run build` fails to minify
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+Thank you for checking out my Quote Machine project! If you have any questions or feedback, feel free to reach out.
